@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000;
+    background-image: linear-gradient(to top left, #000000, #ffffff, #05622c);
+    position: relative;
+    text-align: center;
+  }
+  header {
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 10px;
+    margin-top: 40px;
+    padding: 20px 10px;
+    color: white;
+  }
+  .snakeTable {
+    width: 500;
+    height: 230px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  @media only screen and (min-width: 768px) {
+    .snakeTable {
+      width: 525px;
+      height: 555px;
+    }
+  }
+  .square {
+    background: white;
+    width: 25px;
+    height: 25px;
+  }
+  
+  
+  .food {
+    background: #ff0202;
+  }
+  
+  .snake {
+    background: #064906;
+  }
+  .pointsContainer {
+    background: white;
+    color: #000000;
+    border: solid 1px #000000;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+    width: 210px;
+    height: 25px;
+  }
+  .pts{
+    height: 40px;
+    display: flex;
+  }
+  @media only screen and (min-width: 768px) {
+    .status {
+      width: 315px;
+      height: 30px;
+    }
+  }
+  
+  .score {
+    float: right;
+    padding: 0 5px;
+    line-height: 20px;
+  }
+  @media only screen and (min-width: 768px) {
+    .score {
+      padding: 0 10px;
+      line-height: 30px;
+      font-size: 20px;
+    }
+  }
+  .popUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0,0,0);
+    text-align: center;
+  }
+  .start {
+    background: rgb(256,256,256);
+    padding: 60px;
+    box-shadow: 0 0 2px 3px rgba(0,0,0,0.3);
+    border-radius: 2px;
+  }
+  .start span {
+    color: #000000;
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .start span:hover {
+    background: #16a085;
+    color: white;
+  }
+  
